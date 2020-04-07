@@ -1,7 +1,7 @@
 {
   "name": "matomo-opt-out",
   "version": "0.0.1",
-  "description": "Webcomponent matomo-opt-out following open-wc recommendations",
+  "description": "A web component to let visitors opt-out of Matomo tracking",
   "author": "Inventage AG <info@inventage.com>",
   "license": "MIT",
   "main": "index.js",
