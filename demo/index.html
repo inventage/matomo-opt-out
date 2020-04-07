@@ -1,29 +1,26 @@
-<!doctype html>
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8">
-  <style>
-    body {
-      background: #fafafa;
-    }
-  </style>
-</head>
-<body>
-  <div id="demo"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>matomo-opt-out demo</title>
+  </head>
+  <body>
+    <div id="demo"></div>
 
-  <script type="module">
-    import { html, render } from 'lit-html';
-    import '../index.js';
+    <script type="module">
+      import { html, render } from 'lit-html';
+      import '../index.js';
 
-    const title = 'Hello owc World!';
-    render(
-      html`
-        <matomo-opt-out .title=${title}>
-          some more light-dom
-        </matomo-opt-out>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
-</body>
+      const matomoUrl = 'https://analytics.inventage.com';
+      render(
+        html`
+          <matomo-opt-out .matomoUrl=${matomoUrl}>
+            <p slot="opt-out">Opt out…</p>
+            <p slot="opt-in">Opt in…</p>
+          </matomo-opt-out>
+        `,
+        document.querySelector('#demo'),
+      );
+    </script>
+  </body>
 </html>
