@@ -1,5 +1,5 @@
 {
-  "name": "matomo-opt-out",
+  "name": "@inventage/matomo-opt-out",
   "version": "0.0.1",
   "description": "A web component to let visitors opt-out of Matomo tracking",
   "author": "Inventage AG <info@inventage.com>",

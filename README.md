@@ -1,65 +1,13 @@
 # \<matomo-opt-out>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+A web component to let visitors opt-out of Matomo tracking.
+
+Based on [lit-element] and [lit-html].
 
 ## Dependencies
 
-- [Ajax Opt Out] Matomo Plugin
-
-https://matomo.org/faq/general/faq_20000/
-
-## Installation
-```bash
-npm i matomo-opt-out
-```
-
-## Usage
-```html
-<script type="module">
-  import 'matomo-opt-out/matomo-opt-out.js';
-</script>
-
-<matomo-opt-out></matomo-opt-out>
-```
-
-## Linting with ESLint, Prettier, and Types
-To scan the project for linting errors, run
-```bash
-npm run lint
-```
-
-You can lint with ESLint and Prettier individually as well
-```bash
-npm run lint:eslint
-```
-```bash
-npm run lint:prettier
-```
-
-To automatically fix many linting errors, run
-```bash
-npm run format
-```
-
-You can format using ESLint and Prettier individually as well
-```bash
-npm run format:eslint
-```
-```bash
-npm run format:prettier
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `es-dev-server`
-```bash
-npm start
-```
-To run a local development server that serves the basic demo located in `demo/index.html`
+Your Matomo installation will have to have the [Ajax Opt Out] plugin enabled.
 
 [Ajax Opt Out]: https://plugins.matomo.org/AjaxOptOut
+[lit-element]: https://lit-element.polymer-project.org/
+[lit-html]: https://lit-html.polymer-project.org/
