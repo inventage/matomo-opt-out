@@ -6,6 +6,8 @@ This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) reco
 
 - [Ajax Opt Out] Matomo Plugin
 
+https://matomo.org/faq/general/faq_20000/
+
 ## Installation
 ```bash
 npm i matomo-opt-out
