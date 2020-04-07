@@ -2,6 +2,10 @@
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
+## Dependencies
+
+- [Ajax Opt Out] Matomo Plugin
+
 ## Installation
 ```bash
 npm i matomo-opt-out
@@ -55,3 +59,5 @@ If you customize the configuration a lot, you can consider moving them to indivi
 npm start
 ```
 To run a local development server that serves the basic demo located in `demo/index.html`
+
+[Ajax Opt Out]: https://plugins.matomo.org/AjaxOptOut
