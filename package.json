@@ -28,9 +28,9 @@
     "@open-wc/prettier-config": "^0.1.14",
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
-    "@open-wc/building-rollup": "^0.21.0",
-    "rimraf": "^2.6.3",
-    "rollup": "^1.15.4"
+    "@open-wc/building-rollup": "^0.22.12",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.32.1"
   },
   "eslintConfig": {
     "extends": [
