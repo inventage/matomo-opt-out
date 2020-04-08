@@ -6,11 +6,15 @@ import { classMap } from 'lit-html/directives/class-map';
 import httpJsonp from 'http-jsonp';
 
 export class MatomoOptOut extends LitElement {
+  /**
+   * Return the array of styles to apply to the element.
+   *
+   * @see https://lit-element.polymer-project.org/guide/styles#style-the-component-itself
+   */
   static get styles() {
     return css`
       :host {
         display: block;
-        color: var(--matomo-opt-out-text-color, #000);
       }
 
       :host([hidden]) {
@@ -77,6 +81,12 @@ export class MatomoOptOut extends LitElement {
     this._fetchTrackedState();
   }
 
+  /**
+   * Method to call the API and toggle the tracked state.
+   *
+   * @param e
+   * @private
+   */
   _toggleTrackedState(e) {
     if (!this._canUseApi()) {
       return;
@@ -106,6 +116,11 @@ export class MatomoOptOut extends LitElement {
     });
   }
 
+  /**
+   * Retrieves the tracked state from the API.
+   *
+   * @private
+   */
   _fetchTrackedState() {
     if (!this._canUseApi()) {
       return;
@@ -132,8 +147,14 @@ export class MatomoOptOut extends LitElement {
     });
   }
 
+  /**
+   * Returns true if the API can be called, meaning the matomo URL is set and we're not busy.
+   *
+   * @returns {boolean}
+   * @private
+   */
   _canUseApi() {
-    return this.matomoUrl && !this.isBusy;
+    return !!this.matomoUrl && !this.isBusy;
   }
 
   /**
