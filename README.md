@@ -11,6 +11,10 @@ Your Matomo installation will have to have the [Ajax Opt Out] plugin enabled.
 
 ## Usage
 
+```js
+import '@inventage/matomo-opt-out';
+```
+
 ```html
 <matomo-opt-out matomo-url="https://analytics.your-domain.com"></matomo-opt-out>
 ```
