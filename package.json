@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A web component to let visitors opt-out of Matomo tracking",
   "author": "Inventage AG <info@inventage.com>",
+  "repository": "inventage/matomo-opt-out",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
