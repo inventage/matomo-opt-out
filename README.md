@@ -2,7 +2,7 @@
 
 A web component to let visitors opt-out of Matomo tracking.
 
-Based on [lit-element] and [lit-html].
+[![made with open-wc](https://img.shields.io/badge/made%20with-open--wc-%23217ff9)](https://open-wc.org)
 
 ## Dependencies
 
