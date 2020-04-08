@@ -34,7 +34,7 @@ export class MatomoOptOut extends LitElement {
 
   static get properties() {
     return {
-      matomoUrl: { type: String },
+      matomoUrl: { type: String, attribute: 'matomo-url' },
       optedOutLabel: { type: String },
       isTracked: { type: Boolean, attribute: false },
       isBusy: { type: Boolean, attribute: false },
