@@ -3,7 +3,7 @@
 A web component to let visitors opt-out of Matomo tracking.
 
 [![made with open-wc](https://img.shields.io/badge/made%20with-open--wc-%23217ff9)](https://open-wc.org)
-![Node.js CI](https://github.com/inventage/matomo-opt-out/workflows/Node.js%20CI/badge.svg)
+[![Node.js CI](https://github.com/inventage/matomo-opt-out/workflows/Node.js%20CI/badge.svg)](https://github.com/inventage/matomo-opt-out/actions?query=workflow%3A%22Node.js+CI%22)
 
 ## Dependencies
 
