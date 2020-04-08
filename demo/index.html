@@ -19,7 +19,11 @@
 
       render(
         html`
-          <matomo-opt-out matomo-url="${matomoUrl}">
+          <matomo-opt-out
+            matomo-url="${matomoUrl}"
+            opted-out-label="You're currently opted out. Check to opt in."
+            opted-in-label="You're currently opted in. Uncheck to opt out."
+          >
             <p slot="opt-out">Opt out…</p>
             <p slot="opt-in">Opt in…</p>
           </matomo-opt-out>
