@@ -44,7 +44,6 @@ export class MatomoOptOut extends LitElement {
 
   constructor() {
     super();
-    this.matomoUrl = null;
     this.optedOutLabel = 'You are currently opted out. Check this box to opt-in.';
     this.optedInLabel = 'You are not opted out. Uncheck this box to opt-out.';
     this.isTracked = false;

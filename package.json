@@ -33,7 +33,8 @@
     "lint-staged": "^10.1.2",
     "lit-analyzer": "^1.1.10",
     "rimraf": "^3.0.2",
-    "rollup": "^1.32.1"
+    "rollup": "^1.32.1",
+    "web-component-analyzer": "^1.0.3"
   },
   "eslintConfig": {
     "extends": [

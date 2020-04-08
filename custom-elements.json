@@ -1,30 +1,52 @@
 {
-  "version": 2,
+  "version": "experimental",
   "tags": [
     {
       "name": "matomo-opt-out",
-      "description": "A component with a title and an action counter",
-      "properties": [
+      "path": "./src/MatomoOptOut.js",
+      "attributes": [
         {
-          "name": "title",
-          "type": "String",
-          "description": "The title of your component",
-          "default": "Hey there"
+          "name": "matomo-url",
+          "type": "string"
         },
         {
-          "name": "counter",
-          "type": "Number",
-          "description": "An action counter",
-          "default": 0
+          "name": "opted-out-label",
+          "type": "string",
+          "default": "\"You are currently opted out. Check this box to opt-in.\""
+        },
+        {
+          "name": "opted-in-label",
+          "type": "string",
+          "default": "\"You are not opted out. Uncheck this box to opt-out.\""
         }
       ],
-      "events": [],
-      "slots": [],
-      "cssProperties": [
+      "properties": [
         {
-          "name": "--matomo-opt-out-text-color",
-          "description": "Main Text Color",
-          "type": "Color"
+          "name": "matomoUrl",
+          "attribute": "matomo-url",
+          "type": "string"
+        },
+        {
+          "name": "optedOutLabel",
+          "attribute": "opted-out-label",
+          "type": "string",
+          "default": "\"You are currently opted out. Check this box to opt-in.\""
+        },
+        {
+          "name": "optedInLabel",
+          "attribute": "opted-in-label",
+          "type": "string",
+          "default": "\"You are not opted out. Uncheck this box to opt-out.\""
+        },
+        {
+          "name": "isTracked",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "isBusy",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     }

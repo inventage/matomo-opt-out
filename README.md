@@ -17,9 +17,13 @@ Your Matomo installation will have to have the [Ajax Opt Out] plugin enabled.
 
 ### Properties
 
-| Property    | Attribute    | Type     | Default | Description                         |
-| ----------- | ------------ | -------- | ------- | ----------------------------------- |
-| `matomoUrl` | `matomo-url` | `string` |         | The URL to your Matomo installation |
+| Property        | Attribute         | Type      | Default                                                  |
+| --------------- | ----------------- | --------- | -------------------------------------------------------- |
+| `isBusy`        |                   | `boolean` | false                                                    |
+| `isTracked`     |                   | `boolean` | false                                                    |
+| `matomoUrl`     | `matomo-url`      | `string`  |                                                          |
+| `optedInLabel`  | `opted-in-label`  | `string`  | "You are not opted out. Uncheck this box to opt-out."    |
+| `optedOutLabel` | `opted-out-label` | `string`  | "You are currently opted out. Check this box to opt-in." |
 
 ## Development
 
