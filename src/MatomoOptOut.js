@@ -78,7 +78,7 @@ export class MatomoOptOut extends LitElement {
   }
 
   _toggleTrackedState(e) {
-    if (this.isBusy) {
+    if (!this._canUseApi()) {
       return;
     }
 
@@ -107,6 +107,10 @@ export class MatomoOptOut extends LitElement {
   }
 
   _fetchTrackedState() {
+    if (!this._canUseApi()) {
+      return;
+    }
+
     this.isBusy = true;
 
     httpJsonp({
@@ -128,8 +132,12 @@ export class MatomoOptOut extends LitElement {
     });
   }
 
+  _canUseApi() {
+    return this.matomoUrl && !this.isBusy;
+  }
+
   /**
-   * Returns the URL to the given Piwik AjaxOptOut Plugin API method.
+   * Returns the URL to the given Matomo AjaxOptOut Plugin API method.
    *
    * @see https://github.com/lippoliv/piwik-plugin-ajaxoptout/blob/master/README.md
    * @param method
