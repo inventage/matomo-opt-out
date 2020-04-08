@@ -14,6 +14,15 @@
     "README.md",
     "src/*"
   ],
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "lit-html",
+    "matomo",
+    "opt-out",
+    "tracking",
+    "analytics"
+  ],
   "scripts": {
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "start:build": "es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
