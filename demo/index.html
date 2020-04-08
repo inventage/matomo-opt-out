@@ -14,9 +14,9 @@
 
     <script type="module">
       import { html, render } from 'lit-html';
+      import { matomoUrl } from '../local.config.js';
       import '../index.js';
 
-      const matomoUrl = 'https://analytics.inventage.com';
       render(
         html`
           <matomo-opt-out matomo-url="${matomoUrl}">

@@ -1,19 +1,6 @@
-## system files
-.DS_Store
-
-## npm
-/node_modules/
-/npm-debug.log
-
-## testing
-/coverage/
-
-## temp folders
-/.tmp/
-
-# build
-/_site/
-/dist/
+/dist
+/node_modules
+/local.config.js
 
 # IDEA resources
 # @see https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
