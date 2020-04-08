@@ -6,6 +6,14 @@
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
+  "files": [
+    "index.js",
+    "custom-elements.json",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md",
+    "src/*"
+  ],
   "scripts": {
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "start:build": "es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
