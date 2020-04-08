@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>matomo-opt-out demo</title>
+    <style>
+      body {
+        font-family: -apple-system, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div id="demo"></div>
@@ -14,7 +19,7 @@
       const matomoUrl = 'https://analytics.inventage.com';
       render(
         html`
-          <matomo-opt-out .matomoUrl=${matomoUrl}>
+          <matomo-opt-out matomo-url="${matomoUrl}">
             <p slot="opt-out">Opt out…</p>
             <p slot="opt-in">Opt in…</p>
           </matomo-opt-out>
