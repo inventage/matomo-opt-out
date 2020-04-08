@@ -19,6 +19,12 @@ import '@inventage/matomo-opt-out';
 <matomo-opt-out matomo-url="https://analytics.your-domain.com"></matomo-opt-out>
 ```
 
+### Note on browser compatibility & transformation
+
+Currently, the recommended way to publish a web component using [open-wc] is to publish the ES6/7 source code as is. 
+Since your application knows best about which browsers to support and how to transform the source code (if at all)
+for those browsers, you will have to take care of any transformations yourself.
+
 ### Properties
 
 | Property        | Attribute         | Type      | Default                                                  |
@@ -39,3 +45,4 @@ import '@inventage/matomo-opt-out';
 [ajax opt out]: https://plugins.matomo.org/AjaxOptOut
 [lit-element]: https://lit-element.polymer-project.org/
 [lit-html]: https://lit-html.polymer-project.org/
+[open-wc]: https://open-wc.org
