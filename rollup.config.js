@@ -1,3 +1,10 @@
-import { createCompatibilityConfig } from '@open-wc/building-rollup';
+import merge from 'deepmerge';
+import { createSpaConfig } from '@open-wc/building-rollup';
 
-export default createCompatibilityConfig({ input: './index.html' });
+const baseConfig = createSpaConfig({
+  legacyBuild: true,
+});
+
+export default merge(baseConfig, {
+  input: './index.html',
+});
