@@ -19,6 +19,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.1.0] - 2020-04-20
+
+### Added
+
+- Added missing `type` declaration to package definition (@see https://justinfagnani.com/2019/11/01/how-to-publish-web-components-to-npm/)
+- Automatically generate `custom-elements.json` when committing and before publishing.
+
+### Changed
+
+- Updated rollup build config to the latest open-wc version which uses rollup.js 2.x
+
 ## [1.0.2] - 2020-04-15
 
 ### Added
@@ -42,7 +53,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release with a documentation and examples.
 
-[Unreleased]: https://github.com/inventage/matomo-opt-out/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/inventage/matomo-opt-out/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/inventage/matomo-opt-out/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/inventage/matomo-opt-out/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/inventage/matomo-opt-out/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/inventage/matomo-opt-out/releases/tag/v1.0.0
