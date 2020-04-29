@@ -61,9 +61,7 @@ export class MatomoOptOut extends LitElement {
 
     if (!this.matomoUrl) {
       // eslint-disable-next-line no-console
-      console.error(
-        'Use the `matomo-url` property to specify the URL to your matomo installation.',
-      );
+      console.error('Use the `matomo-url` property to specify the URL to your matomo installation.');
     }
   }
 
@@ -176,20 +174,18 @@ export class MatomoOptOut extends LitElement {
             ? html`
                 <slot name="opt-out">
                   <p>
-                    You may choose to prevent this website from aggregating and analyzing the
-                    actions you take here. Doing so will protect your privacy, but will also prevent
-                    the owner from learning from your actions and creating a better experience for
-                    you and other users.
+                    You may choose to prevent this website from aggregating and analyzing the actions you take here.
+                    Doing so will protect your privacy, but will also prevent the owner from learning from your actions
+                    and creating a better experience for you and other users.
                   </p>
                 </slot>
               `
             : html`
                 <slot name="opt-in">
                   <p>
-                    Opt-out complete; your visits to this website will not be recorded by the Web
-                    Analytics tool. Note that if you clear your cookies, delete the opt-out cookie,
-                    or if you change computers or Web browsers, you will need to perform the opt-out
-                    procedure again.
+                    Opt-out complete; your visits to this website will not be recorded by the Web Analytics tool. Note
+                    that if you clear your cookies, delete the opt-out cookie, or if you change computers or Web
+                    browsers, you will need to perform the opt-out procedure again.
                   </p>
                 </slot>
               `}
