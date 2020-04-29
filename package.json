@@ -46,18 +46,19 @@
     "lit-html": "^1.2.1"
   },
   "devDependencies": {
-    "@open-wc/building-rollup": "^1.1.2",
-    "@open-wc/eslint-config": "^2.0.4",
-    "@open-wc/prettier-config": "^0.1.14",
+    "@open-wc/building-rollup": "^1.2.1",
+    "@open-wc/eslint-config": "^2.0.5",
     "deepmerge": "^4.2.2",
-    "es-dev-server": "^1.46.2",
+    "es-dev-server": "^1.47.0",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.6",
+    "lint-staged": "^10.2.0",
     "lit-analyzer": "^1.1.10",
     "npm-run-all": "^4.1.5",
+    "prettier": "2.0.5",
     "rimraf": "^3.0.2",
-    "rollup": "^2.6.1",
+    "rollup": "^2.7.3",
     "web-component-analyzer": "^1.0.3"
   },
   "eslintConfig": {
@@ -66,7 +67,6 @@
       "eslint-config-prettier"
     ]
   },
-  "prettier": "@open-wc/prettier-config",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && npm run build:analyze:json && git add custom-elements.json",

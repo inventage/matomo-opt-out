@@ -11,9 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Updated dependencies to their latest versions.
+- Updated `rollup` from `2.6.x` to `2.7.x`.
+
 ### Deprecated
 
 ### Removed
+
+- Removed deprecated `@open-wc/prettier-config`, using Prettier directly.
 
 ### Fixed
 
