@@ -1,6 +1,6 @@
 import { css, LitElement } from 'lit-element';
 import { html, nothing } from 'lit-html';
-import { classMap } from 'lit-html/directives/class-map';
+import { classMap } from 'lit-html/directives/class-map.js';
 
 // @see https://github.com/iDerekLi/http-jsonp
 import httpJsonp from 'http-jsonp';
