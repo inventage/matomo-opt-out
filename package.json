@@ -26,7 +26,7 @@
     "analytics"
   ],
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run build:analyze:json",
     "build": "run-s build:**",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "start:build": "npm run build && es-dev-server --root-dir dist --app-index index.html --compatibility none --open",
